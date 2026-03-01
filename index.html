@@ -45,19 +45,19 @@
       </div>
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-8">
-          <a href="#about" class="hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">About</a>
-          <a href="#services" class="hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Services</a>
-          <a href="#education" class="hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Education</a>
-          <a href="#experience" class="hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Experience</a>
-          <a href="#skills" class="hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Skills</a>
-          <a href="#projects" class="hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Projects</a>
-          <a href="#contact" class="bg-accent text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-accentHover">Contact Me</a>
+          <a href="#about" class="nav-link hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">About</a>
+          <a href="#services" class="nav-link hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Services</a>
+          <!-- Education link highlights the card -->
+          <a href="#about" id="nav-education" class="nav-link hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Education</a>
+          <a href="#experience" class="nav-link hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Experience</a>
+          <a href="#skills" class="nav-link hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Skills</a>
+          <a href="#projects" class="nav-link hover:text-accent px-3 py-2 rounded-md text-sm font-semibold">Projects</a>
+          <a href="#contact" class="nav-link bg-accent text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-accentHover">Contact Me</a>
         </div>
       </div>
     </div>
   </div>
 </nav>
-
 <!-- Hero / Cover -->
 <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
   <div class="md:w-3/5 text-center md:text-left">
@@ -87,7 +87,7 @@
   </div>
 </section>
 
-<!-- About Me -->
+<!-- About Me Section -->
 <section id="about" class="py-20 bg-secondary/30 border-y border-white/5">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center gap-4 mb-12">
@@ -106,14 +106,17 @@
           Built and simulated network topologies using Cisco Packet Tracer and deployed containerized applications in cloud environments. Strong analytical, troubleshooting, and automation skills.
         </p>
       </div>
-      <div class="bg-secondary p-8 rounded-2xl border border-gray-700 shadow-xl">
+      <div id="education-card" class="bg-secondary p-8 rounded-2xl border border-gray-700 shadow-xl transition-all duration-500">
         <h3 class="text-xl font-bold text-white mb-6 border-b border-gray-700 pb-3">
           <i class="fas fa-graduation-cap text-accent mr-2"></i> Education
         </h3>
         <div class="mb-4">
-          <img src="logo.png" alt="HTI Logo" class="w-16 h-16 object-contain rounded-md">
+          <!-- Logo links to HTI website -->
+          <a href="https://hti.edu.eg/site/home_ar" target="_blank">
+            <img src="logo.png" alt="HTI Logo" class="w-16 h-16 object-contain rounded-md hover:scale-105 transition-transform">
+          </a>
 
-          <h4 class="text-accent font-bold text-lg">Higher Technological Institute, 10th of Ramadan</h4>
+          <h4 class="text-accent font-bold text-lg mt-2">Higher Technological Institute, 10th of Ramadan</h4>
           <p class="text-white font-semibold">B.Sc. in Communications & Electronics Engineering</p>
           <p class="text-gray-400 text-sm mt-1"><i class="far fa-calendar-alt mr-1"></i> 2021 - 2026 | GPA: 3.41/4.0</p>
         </div>
@@ -122,6 +125,14 @@
         </p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Education Section (ID added for scrolling) -->
+<section id="education" class="py-20 bg-secondary/30 border-y border-white/5">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-white mb-6">Education Details</h2>
+    <p class="text-gray-400">Here you can expand on your courses, certificates, or any extra educational info.</p>
   </div>
 </section>
 
@@ -284,27 +295,64 @@
       <h2 class="text-3xl font-bold text-white">Projects</h2>
       <div class="h-px bg-gray-700 flex-1"></div>
     </div>
+
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700">
+
+      <!-- Network Design & Simulation -->
+      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
+        <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank"
+           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
+          <i class="fab fa-github"></i>
+        </a>
         <h3 class="text-xl font-bold text-accent mb-2">Network Design & Simulation</h3>
         <p class="text-gray-400 text-sm mb-2">Designed and simulated company network using Cisco Packet Tracer with VLAN segmentation and routing.</p>
         <p class="text-gray-400 text-sm font-semibold">Tech: Packet Tracer, LAN/WAN, VLAN, Static & Dynamic Routing</p>
       </div>
-      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700">
+
+      <!-- Linux & DevOps Practice -->
+      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
+        <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank"
+           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
+          <i class="fab fa-github"></i>
+        </a>
         <h3 class="text-xl font-bold text-accent mb-2">Linux & DevOps Practice</h3>
         <p class="text-gray-400 text-sm mb-2">Hands-on Linux administration, Bash scripting, Git workflows, CI/CD pipelines, and Docker container deployments.</p>
         <p class="text-gray-400 text-sm font-semibold">Tech: Linux, Bash, Git, Docker, CI/CD</p>
       </div>
-      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700">
+
+      <!-- Traffic Light Control System -->
+      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
+        <a href="https://github.com/Ebrahem-Gamal/Smart-Traffic-Controller" target="_blank"
+           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
+          <i class="fab fa-github"></i>
+        </a>
         <h3 class="text-xl font-bold text-accent mb-2">Traffic Light Control System (C)</h3>
         <p class="text-gray-400 text-sm mb-2">Designed and implemented traffic light logic using embedded system concepts and simulated in Proteus.</p>
         <p class="text-gray-400 text-sm font-semibold">Tech: C, Embedded Systems, Proteus</p>
       </div>
-      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700">
+
+      <!-- AI-Driven Fault Detection -->
+      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
+        <a href="https://github.com/Ebrahem-Gamal/AI-Driven-Fault-Detection-in-Electronic-Circuits-" target="_blank"
+           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
+          <i class="fab fa-github"></i>
+        </a>
+        <h3 class="text-xl font-bold text-accent mb-2">AI-Driven Fault Detection</h3>
+        <p class="text-gray-400 text-sm mb-2">Intelligent system for detecting faults in electronic circuits using Machine Learning algorithms with MATLAB & Python simulation.</p>
+        <p class="text-gray-400 text-sm font-semibold">Tech: MATLAB, Python, Machine Learning</p>
+      </div>
+
+      <!-- Cloud-Native Patient Web Interface -->
+      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
+        <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank"
+           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
+          <i class="fab fa-github"></i>
+        </a>
         <h3 class="text-xl font-bold text-accent mb-2">Cloud-Native Patient Web Interface</h3>
         <p class="text-gray-400 text-sm mb-2">Built CI/CD pipeline, containerized Node.js app, deployed on AWS with Terraform, and ran on Kubernetes cluster.</p>
         <p class="text-gray-400 text-sm font-semibold">Tech: Docker, Kubernetes, AWS, GitHub Actions, Terraform</p>
       </div>
+
     </div>
   </div>
 </section>
@@ -355,19 +403,38 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
       <div class="space-y-4 text-gray-400">
+        <!-- Location -->
         <p><i class="fas fa-map-marker-alt text-accent mr-2"></i> Cairo, Egypt</p>
-        <p><i class="fas fa-phone-alt text-accent mr-2"></i> +20 1007239678</p>
-        <p><i class="fas fa-envelope text-accent mr-2"></i> ebrahemgamal0321@gmail.com</p>
+        <!-- WhatsApp Number -->
+        <p>
+          <i class="fas fa-phone-alt text-accent mr-2"></i>
+          <a href="https://wa.me/201007239678" target="_blank" class="hover:text-accentHover hover:shadow-lg hover:shadow-accent/50 transition-all duration-300 rounded-md px-1">+20 1007239678</a>
+        </p>
+        <!-- Email -->
+        <p>
+          <i class="fas fa-envelope text-accent mr-2"></i>
+          <a href="mailto:ebrahemgamal0321@gmail.com" class="hover:text-accentHover hover:shadow-lg hover:shadow-accent/50 transition-all duration-300 rounded-md px-1">ebrahemgamal0321@gmail.com</a>
+        </p>
+        <!-- Social Links -->
         <div class="flex gap-4 mt-4">
-          <a href="https://github.com/Ebrahem-Gamal/gitremote/settings/access" target="_blank" class="text-accent hover:text-accentHover text-2xl"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/ebrahem-gamal-network" target="_blank" class="text-accent hover:text-accentHover text-2xl"><i class="fab fa-linkedin"></i></a>
+          <!-- GitHub -->
+          <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank" class="text-accent hover:text-accentHover text-2xl transition-all duration-300">
+            <i class="fab fa-github"></i>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/ebrahem-gamal-network" target="_blank" class="text-accent hover:text-accentHover text-2xl transition-all duration-300">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
       </div>
+      <!-- Contact Form -->
       <form action="mailto:ebrahemgamal0321@gmail.com" method="post" class="space-y-4">
         <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded-md bg-secondary border border-gray-700 text-white focus:border-accent focus:outline-none">
         <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded-md bg-secondary border border-gray-700 text-white focus:border-accent focus:outline-none">
         <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded-md bg-secondary border border-gray-700 text-white focus:border-accent focus:outline-none"></textarea>
-        <button type="submit" class="bg-accent hover:bg-accentHover text-white px-6 py-3 rounded-md font-bold flex items-center gap-2"><i class="fas fa-paper-plane"></i> Send Message</button>
+        <button type="submit" class="bg-accent hover:bg-accentHover text-white px-6 py-3 rounded-md font-bold flex items-center gap-2 transition-all duration-300">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
       </form>
     </div>
   </div>
@@ -382,7 +449,7 @@
       <i class="fas fa-file-download"></i> Download CV
     </a>
     <!-- GitHub -->
-    <a href="https://github.com/Ebrahem-Gamal/gitremote/settings/access" target="_blank" class="hover:text-accent flex items-center gap-2">
+    <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank" class="hover:text-accent flex items-center gap-2">
       <i class="fab fa-github"></i> GitHub
     </a>
     <!-- LinkedIn -->
@@ -392,3 +459,40 @@
   </div>
   <p class="text-sm">&copy; 2026 Ebrahem Gamal. All rights reserved.</p>
 </footer>
+<!-- ... باقي الصفحة ... -->
+
+<!-- CSS Highlight -->
+<style>
+  .highlight {
+    border-color: #14b8a6 !important;
+    box-shadow: 0 0 20px 5px rgba(20,184,166,0.6);
+    transform: scale(1.02);
+  }
+</style>
+
+<!-- JS Smooth Scroll + Highlight -->
+<script>
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      if(targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+
+      // Highlight Education card
+      if(this.id === 'nav-education') {
+        const card = document.getElementById('education-card');
+        card.classList.add('highlight');
+        setTimeout(() => card.classList.remove('highlight'), 2000);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
