@@ -25,7 +25,7 @@
             }
         }
     </script>
-    <style> 
+    <style>
         .glass-nav { background: rgba(15,23,42,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1);}
         .project-card {transition: transform 0.3s ease, box-shadow 0.3s ease;}
         .project-card:hover {transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(20,184,166,0.3); border-color: rgba(20,184,166,0.5);}
@@ -126,7 +126,7 @@
       </div>
     </div>
   </div>
-    <!-- Why Choose Me Section -->
+  <!-- Why Choose Me Section -->
 
 <section id="why-me" class="py-20">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -141,7 +141,10 @@
     I combine a strong foundation in networking with hands-on experience in cloud technologies and DevOps practices. 
     Through practical training and real-world projects, I have developed the ability to design, deploy, and manage modern infrastructure efficiently.
   </p>
+
+  
 </div>
+
 
   </div>
 </section>
@@ -155,31 +158,36 @@
       <h2 class="text-3xl font-bold text-white">Offered Services</h2>
       <div class="h-px bg-gray-700 flex-1"></div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="bg-secondary/50 p-6 rounded-xl border border-gray-700 hover:border-accent flex flex-col items-center text-center">
-        <i class="fas fa-server text-4xl text-accent mb-4"></i>
-        <h3 class="text-white text-xl font-bold mb-2">Infrastructure Automation</h3>
-        <p class="text-gray-400 text-sm">Provision and manage cloud resources using Terraform, CloudFormation, and CI/CD pipelines for reliable deployments.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center">
+      
+      <div class="bg-secondary/50 p-8 rounded-xl border border-gray-700 hover:border-accent flex flex-col items-center text-center transition-all duration-300 w-full">
+        <img src="LINUX.png" alt="Linux" class="w-[360px] h-[360px] object-contain mb-6">
+        <h3 class="text-white text-2xl font-bold mb-3">Infrastructure Automation</h3>
+        <p class="text-gray-400 text-base max-w-md">Provision and manage cloud resources using Terraform and CloudFormation for reliable and consistent deployments.</p>
       </div>
-      <div class="bg-secondary/50 p-6 rounded-xl border border-gray-700 hover:border-accent flex flex-col items-center text-center">
-        <i class="fab fa-docker text-4xl text-accent mb-4"></i>
-        <h3 class="text-white text-xl font-bold mb-2">Containerization & Orchestration</h3>
-        <p class="text-gray-400 text-sm">Dockerize applications and manage scalable deployments with Kubernetes for high availability and portability.</p>
+
+      <div class="bg-secondary/50 p-8 rounded-xl border border-gray-700 hover:border-accent flex flex-col items-center text-center transition-all duration-300 w-full">
+        <img src="KUB.png" alt="Kubernetes" class="w-[360px] h-[360px] object-contain mb-6">
+        <h3 class="text-white text-2xl font-bold mb-3">Containerization & Orchestration</h3>
+        <p class="text-gray-400 text-base max-w-md">Managing complex microservices architectures using Kubernetes to ensure high availability, scalability, and seamless portability.</p>
       </div>
-      <div class="bg-secondary/50 p-6 rounded-xl border border-gray-700 hover:border-accent flex flex-col items-center text-center">
-        <i class="fas fa-network-wired text-4xl text-accent mb-4"></i>
-        <h3 class="text-white text-xl font-bold mb-2">Network Design & Troubleshooting</h3>
-        <p class="text-gray-400 text-sm">Design, simulate, and optimize LAN/WAN networks with VLANs, routing protocols, and IP addressing schemes for businesses.</p>
+
+      <div class="bg-secondary/50 p-8 rounded-xl border border-gray-700 hover:border-accent flex flex-col items-center text-center transition-all duration-300 w-full">
+        <img src="NETWORK.png" alt="Networking" class="w-[360px] h-[360px] object-contain mb-6">
+        <h3 class="text-white text-2xl font-bold mb-3">Network Design & Troubleshooting</h3>
+        <p class="text-gray-400 text-base max-w-md">Expertise in designing and optimizing LAN/WAN infrastructures, implementing secure routing protocols, and managing enterprise-grade network architectures.</p>
       </div>
-      <div class="bg-secondary/50 p-6 rounded-xl border border-gray-700 hover:border-accent flex flex-col items-center text-center">
-        <i class="fas fa-cogs text-4xl text-accent mb-4"></i>
-        <h3 class="text-white text-xl font-bold mb-2">CI/CD & DevOps Practices</h3>
-        <p class="text-gray-400 text-sm">Implement continuous integration and deployment pipelines using Jenkins, GitHub Actions, and automated testing workflows.</p>
+
+      <div class="bg-secondary/50 p-8 rounded-xl border border-gray-700 hover:border-accent flex flex-col items-center text-center transition-all duration-300 w-full">
+        <img src="DOCKER.jpg" alt="Docker" class="w-[360px] h-[360px] object-contain mb-6">
+        <h3 class="text-white text-2xl font-bold mb-3">CI/CD & DevOps Practices</h3>
+        <p class="text-gray-400 text-base max-w-md">Building automated pipelines with Jenkins and GitHub Actions to bridge the gap between development and operations.</p>
       </div>
+
     </div>
   </div>
 </section>
-
 <!-- Experience Section -->
 
 <section id="experience" class="py-20 bg-secondary/30 border-y border-white/5">
@@ -329,6 +337,7 @@
 
   </div>
 </section>
+
 <!-- Skills Section -->
 <section id="skills" class="py-20 bg-secondary/30 border-y border-white/5">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -377,81 +386,148 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Network Design & Simulation -->
-      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
-        <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank"
-           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
-          <i class="fab fa-github"></i>
-        </a>
-        <h3 class="text-xl font-bold text-accent mb-2">Network Design & Simulation</h3>
-        <p class="text-gray-400 text-sm mb-2">Designed and simulated company network using Cisco Packet Tracer with VLAN segmentation and routing.</p>
-        <p class="text-gray-400 text-sm font-semibold">Tech: Packet Tracer, LAN/WAN, VLAN, Static & Dynamic Routing</p>
+      <div class="project-card bg-secondary/50 rounded-xl border border-gray-700 overflow-hidden relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-all duration-300">
+        <img src="NETWORK.png" alt="Network Project" class="w-full h-48 object-cover group-hover:opacity-80 transition-opacity">
+        <div class="p-6">
+          <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank" class="absolute top-4 right-4 text-white bg-black/50 p-2 rounded-full hover:text-accent text-xl">
+            <i class="fab fa-github"></i>
+          </a>
+          <h3 class="text-xl font-bold text-accent mb-2">Network Design & Simulation</h3>
+          <p class="text-gray-400 text-sm mb-4">Designed and simulated company network using Cisco Packet Tracer with VLAN segmentation and routing.</p>
+          <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider">Tech: Packet Tracer, LAN/WAN, VLAN</p>
+        </div>
       </div>
 
-      <!-- Linux & DevOps Practice -->
-      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
-        <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank"
-           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
-          <i class="fab fa-github"></i>
-        </a>
-        <h3 class="text-xl font-bold text-accent mb-2">Linux & DevOps Practice</h3>
-        <p class="text-gray-400 text-sm mb-2">Hands-on Linux administration, Bash scripting, Git workflows, CI/CD pipelines, and Docker container deployments.</p>
-        <p class="text-gray-400 text-sm font-semibold">Tech: Linux, Bash, Git, Docker, CI/CD</p>
+      <div class="project-card bg-secondary/50 rounded-xl border border-gray-700 overflow-hidden relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-all duration-300">
+        <img src="LINUX.png" alt="DevOps Project" class="w-full h-48 object-cover group-hover:opacity-80 transition-opacity">
+        <div class="p-6">
+          <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank" class="absolute top-4 right-4 text-white bg-black/50 p-2 rounded-full hover:text-accent text-xl">
+            <i class="fab fa-github"></i>
+          </a>
+          <h3 class="text-xl font-bold text-accent mb-2">Linux & DevOps Practice</h3>
+          <p class="text-gray-400 text-sm mb-4">Hands-on Linux administration, Bash scripting, Git workflows, CI/CD pipelines, and Docker container deployments.</p>
+          <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider">Tech: Linux, Bash, Git, Docker</p>
+        </div>
       </div>
 
-      <!-- Traffic Light Control System -->
-      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
-        <a href="https://github.com/Ebrahem-Gamal/Smart-Traffic-Controller" target="_blank"
-           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
-          <i class="fab fa-github"></i>
-        </a>
-        <h3 class="text-xl font-bold text-accent mb-2">Traffic Light Control System (C)</h3>
-        <p class="text-gray-400 text-sm mb-2">Designed and implemented traffic light logic using embedded system concepts and simulated in Proteus.</p>
-        <p class="text-gray-400 text-sm font-semibold">Tech: C, Embedded Systems, Proteus</p>
+      <div class="project-card bg-secondary/50 rounded-xl border border-gray-700 overflow-hidden relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-all duration-300">
+        <img src="TRAF.png" alt="Traffic Light Project" class="w-full h-48 object-cover group-hover:opacity-80 transition-opacity">
+        <div class="p-6">
+          <a href="https://github.com/Ebrahem-Gamal/Smart-Traffic-Controller" target="_blank" class="absolute top-4 right-4 text-white bg-black/50 p-2 rounded-full hover:text-accent text-xl">
+            <i class="fab fa-github"></i>
+          </a>
+          <h3 class="text-xl font-bold text-accent mb-2">Traffic Light Control System (C)</h3>
+          <p class="text-gray-400 text-sm mb-4">Designed and implemented traffic light logic using embedded system concepts and simulated in Proteus.</p>
+          <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider">Tech: C, Embedded Systems, Proteus</p>
+        </div>
       </div>
 
-      <!-- AI-Driven Fault Detection -->
-      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
-        <a href="https://github.com/Ebrahem-Gamal/AI-Driven-Fault-Detection-in-Electronic-Circuits-" target="_blank"
-           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
-          <i class="fab fa-github"></i>
-        </a>
-        <h3 class="text-xl font-bold text-accent mb-2">AI-Driven Fault Detection</h3>
-        <p class="text-gray-400 text-sm mb-2">Intelligent system for detecting faults in electronic circuits using Machine Learning algorithms with MATLAB & Python simulation.</p>
-        <p class="text-gray-400 text-sm font-semibold">Tech: MATLAB, Python, Machine Learning</p>
+      <div class="project-card bg-secondary/50 rounded-xl border border-gray-700 overflow-hidden relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-all duration-300">
+        <img src="ai.png" alt="AI Fault Detection" class="w-full h-48 object-cover group-hover:opacity-80 transition-opacity">
+        <div class="p-6">
+          <a href="https://github.com/Ebrahem-Gamal/AI-Driven-Fault-Detection-in-Electronic-Circuits-" target="_blank" class="absolute top-4 right-4 text-white bg-black/50 p-2 rounded-full hover:text-accent text-xl">
+            <i class="fab fa-github"></i>
+          </a>
+          <h3 class="text-xl font-bold text-accent mb-2">AI-Driven Fault Detection</h3>
+          <p class="text-gray-400 text-sm mb-4">Intelligent system for detecting faults in electronic circuits using ML algorithms with MATLAB & Python simulation.</p>
+          <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider">Tech: MATLAB, Python, Machine Learning</p>
+        </div>
       </div>
 
-      <!-- Cloud-Native Patient Web Interface -->
-      <div class="project-card bg-secondary/50 p-6 rounded-xl border border-gray-700 relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-transform duration-300">
-        <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank"
-           class="absolute top-4 right-4 text-gray-400 hover:text-accent text-xl">
-          <i class="fab fa-github"></i>
-        </a>
-        <h3 class="text-xl font-bold text-accent mb-2">Cloud-Native Patient Web Interface</h3>
-        <p class="text-gray-400 text-sm mb-2">Built CI/CD pipeline, containerized Node.js app, deployed on AWS with Terraform, and ran on Kubernetes cluster.</p>
-        <p class="text-gray-400 text-sm font-semibold">Tech: Docker, Kubernetes, AWS, GitHub Actions, Terraform</p>
+      <div class="project-card bg-secondary/50 rounded-xl border border-gray-700 overflow-hidden relative group hover:scale-105 hover:shadow-2xl hover:border-accent transition-all duration-300">
+        <img src="KUB.png" alt="Cloud Project" class="w-full h-48 object-cover group-hover:opacity-80 transition-opacity">
+        <div class="p-6">
+          <a href="https://github.com/Ebrahem-Gamal?tab=repositories" target="_blank" class="absolute top-4 right-4 text-white bg-black/50 p-2 rounded-full hover:text-accent text-xl">
+            <i class="fab fa-github"></i>
+          </a>
+          <h3 class="text-xl font-bold text-accent mb-2">Cloud-Native Patient Web Interface</h3>
+          <p class="text-gray-400 text-sm mb-4">Built CI/CD pipeline, containerized Node.js app, deployed on AWS with Terraform, and ran on Kubernetes cluster.</p>
+          <p class="text-gray-400 text-xs font-semibold uppercase tracking-wider">Tech: Docker, Kubernetes, AWS, Terraform</p>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
-
 <!-- Achievements Section -->
+
 <section id="achievements" class="py-20 bg-secondary/30 border-y border-white/5">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center gap-4 mb-16">
-      <h2 class="text-3xl font-bold text-white">Achievements</h2>
-      <div class="h-px bg-gray-700 flex-1"></div>
+
+```
+<div class="flex items-center gap-4 mb-16">
+  <h2 class="text-3xl font-bold text-white">Achievements</h2>
+  <div class="h-px bg-gray-700 flex-1"></div>
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+  <!-- Achievement 1 -->
+  <div class="bg-secondary border border-gray-700 rounded-2xl p-6 shadow-xl 
+  hover:border-accent hover:scale-105 hover:shadow-2xl transition-all duration-500">
+    <div class="flex items-center gap-4 mb-4">
+      <i class="fas fa-certificate text-accent text-2xl"></i>
+      <h3 class="text-lg font-bold text-white">DevOps & Cloud Certifications</h3>
     </div>
-    <ul class="list-disc list-inside space-y-3 text-gray-400">
-      <li>Completed multiple DevOps & Cloud certifications through DEPI and ITI programs.</li>
-      <li>Successfully deployed containerized applications on AWS with CI/CD automation.</li>
-      <li>Designed and implemented LAN/WAN networks for training projects in NTI.</li>
-      <li>Developed practical Bash scripts for automation of Linux system administration tasks.</li>
-      <li>Simulated complex network topologies and optimized routing using Cisco Packet Tracer.</li>
-    </ul>
+    <p class="text-gray-400">
+      Completed multiple professional training programs in DevOps and Cloud technologies through DEPI and ITI initiatives.
+    </p>
+  </div>
+
+  <!-- Achievement 2 -->
+  <div class="bg-secondary border border-gray-700 rounded-2xl p-6 shadow-xl 
+  hover:border-accent hover:scale-105 hover:shadow-2xl transition-all duration-500">
+    <div class="flex items-center gap-4 mb-4">
+      <i class="fas fa-cloud text-accent text-2xl"></i>
+      <h3 class="text-lg font-bold text-white">AWS Deployment</h3>
+    </div>
+    <p class="text-gray-400">
+      Successfully deployed containerized applications on AWS using Docker with CI/CD automation concepts.
+    </p>
+  </div>
+
+  <!-- Achievement 3 -->
+  <div class="bg-secondary border border-gray-700 rounded-2xl p-6 shadow-xl 
+  hover:border-accent hover:scale-105 hover:shadow-2xl transition-all duration-500">
+    <div class="flex items-center gap-4 mb-4">
+      <i class="fas fa-network-wired text-accent text-2xl"></i>
+      <h3 class="text-lg font-bold text-white">Network Design</h3>
+    </div>
+    <p class="text-gray-400">
+      Designed and implemented LAN/WAN networks during NTI training using routing protocols and subnetting strategies.
+    </p>
+  </div>
+
+  <!-- Achievement 4 -->
+  <div class="bg-secondary border border-gray-700 rounded-2xl p-6 shadow-xl 
+  hover:border-accent hover:scale-105 hover:shadow-2xl transition-all duration-500">
+    <div class="flex items-center gap-4 mb-4">
+      <i class="fas fa-terminal text-accent text-2xl"></i>
+      <h3 class="text-lg font-bold text-white">Linux Automation</h3>
+    </div>
+    <p class="text-gray-400">
+      Developed practical Bash scripts to automate Linux system administration tasks and improve operational efficiency.
+    </p>
+  </div>
+
+  <!-- Achievement 5 -->
+  <div class="bg-secondary border border-gray-700 rounded-2xl p-6 shadow-xl 
+  hover:border-accent hover:scale-105 hover:shadow-2xl transition-all duration-500">
+    <div class="flex items-center gap-4 mb-4">
+      <i class="fas fa-project-diagram text-accent text-2xl"></i>
+      <h3 class="text-lg font-bold text-white">Network Simulation</h3>
+    </div>
+    <p class="text-gray-400">
+      Built and simulated complex network topologies using Cisco Packet Tracer and optimized routing configurations.
+    </p>
+  </div>
+
+</div>
+```
+
   </div>
 </section>
+
 
 
 
